@@ -1,0 +1,20 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Order Placed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>🎉 Thank you for your order!</h2>
+        <p>Your cart:</p>
+        <ul class="list-group">
+            {% for key, item in cart.items %}
+                <li class="list-group-item">
+                    {{ item.1 }} (Qty: {{ item.0 }}) — ₹{{ item.2|floatformat:2 }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html> {% endcomment %}

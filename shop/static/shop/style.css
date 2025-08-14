@@ -1,8 +1,21 @@
-.card-text{
-    color: green;
-    font-weight:700
+
+.card {
+    margin-bottom: 20px; /* Adds some space between product cards */
 }
 
-.card-title{
-    font-weight: 700;
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Fixed height for uniform card images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style for the search bar form */
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
